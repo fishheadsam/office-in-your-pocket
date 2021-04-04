@@ -1,19 +1,16 @@
 ﻿<Window x:Name="L2G" x:Class="Demo2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Demo2"
         mc:Ignorable="d"
-        Title="Office in Pocket" Height="457.333" Width="450">
-    <Grid>
-        <Button Content="Student" Margin="34,63,248,0" VerticalAlignment="Top" Click="Download_Student_ISO" Height="44"/>
-        <Button Content="Lecture" Margin="249,63,33,0" VerticalAlignment="Top" Click="Download_Lecture_ISO" Height="44"/>
-        <ComboBox Name="schoolList" Margin="35,171,32,0" VerticalAlignment="Top" Height="32">
-            <ComboBoxItem>Dublin City University (DCU)</ComboBoxItem>
+        Title="Office in Pocket" Height="350" Width="400">
+    <Grid Margin="0,0,0,0">
+        <Button Content="Student" Margin="10,117,0,0" VerticalAlignment="Top" Click="Download_Student_ISO" Height="44" HorizontalAlignment="Left" Width="160" />
+        <Button Content="Lecture" Margin="222,117,0,0" VerticalAlignment="Top" Click="Download_Lecture_ISO" Height="44" HorizontalAlignment="Left" Width="160" />
+        <ComboBox Name="schoolList" Margin="10,45,0,0" VerticalAlignment="Top" Height="32" HorizontalAlignment="Left" Width="372" SelectionChanged="schoolList_SelectionChanged">
             <ComboBoxItem>Maynooth University</ComboBoxItem>
             <ComboBoxItem>National University of Ireland, Galway</ComboBoxItem>
-            <ComboBoxItem>Royal College of Surgeons in Ireland</ComboBoxItem>
             <ComboBoxItem>Trinity College Dublin (TCD)</ComboBoxItem>
             <ComboBoxItem>Technological University Dublin</ComboBoxItem>
             <ComboBoxItem>University College Cork (UCC)</ComboBoxItem>
@@ -21,23 +18,20 @@
             <ComboBoxItem>University of Limerick</ComboBoxItem>
             <ComboBoxItem>Other</ComboBoxItem>
         </ComboBox>
-        <ProgressBar Name="progressBar" HorizontalAlignment="Left" Height="20" Margin="35,347,0,0" VerticalAlignment="Top" Width="290"/>
-        <Label Content="Please Select your Role :" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="381" FontSize="16"/>
-        <Label Content="Please Select your University :" HorizontalAlignment="Left" Margin="28,136,0,0" VerticalAlignment="Top" Width="381" FontSize="16"/>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="249,379,0,0" VerticalAlignment="Top" Width="76" Height="26" Click="startButtonClick"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="334,379,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="exitButtonClick"/>
-        <Label Content="Please Select your Add-on Software :" HorizontalAlignment="Left" Margin="29,221,0,0" VerticalAlignment="Top" Width="381" FontSize="16"/>
-        <CheckBox x:Name="chromeCheck" Content="Chrome" HorizontalAlignment="Left" Margin="35,256,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="firefoxCheck" Content="Firefox" HorizontalAlignment="Left" Margin="35,276,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="teamsCheck" Content="Teams" HorizontalAlignment="Left" Margin="126,256,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="zoomCheck" Content="Zoom" HorizontalAlignment="Left" Margin="126,276,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="panoptoCheck" Content="Panopto" HorizontalAlignment="Left" Margin="209,256,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="officeCheck" Content="LibreOffice" HorizontalAlignment="Left" Margin="291,256,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="mailCheck" Content="Thunderbird" HorizontalAlignment="Left" Margin="126,296,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="vlcCheck" Content="VLC" HorizontalAlignment="Left" Margin="35,296,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="obsCheck" Content="OBS" HorizontalAlignment="Left" Margin="210,276,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="onlyofficeCheck" Content="OnlyOffice" HorizontalAlignment="Left" Margin="291,276,0,0" VerticalAlignment="Top"/>
-        <Button Content="Need Help?" HorizontalAlignment="Left" Margin="35,386,0,0" VerticalAlignment="Top" Width="66" Height="19" BorderBrush="White" Background="White" Foreground="#FF2E61CF" RenderTransformOrigin="2.193,0.404" FontSize="10"/>
-        <Label x:Name ="status" Content="" HorizontalAlignment="Left" Margin="335,344,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <ProgressBar Name="progressBar" HorizontalAlignment="Left" Height="20" Margin="10,258,0,0" VerticalAlignment="Top" Width="372" />
+        <Label Content="Step 1: Please Select your University :" HorizontalAlignment="Left" Margin="10,10,0,279" Width="381" FontSize="16" />
+        <Button Content="Start" HorizontalAlignment="Left" Margin="222,283,0,0" VerticalAlignment="Top" Width="76" Height="26" Click="StartButtonClick" />
+        <Button Content="Exit" Margin="307,283,0,0" VerticalAlignment="Top" Height="26" Click="exitButtonClick" HorizontalAlignment="Left" Width="75" />
+        <Label x:Name ="status" Content="" Margin="185,255,132,0" VerticalAlignment="Top" Height="23" />
+        <Label Content="Step 2: Please Select your Role :" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="381" FontSize="16" Height="30" />
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,166,0,0" Height="84" Width="175" MaxWidth="175">
+            <TextBlock TextWrapping="Wrap" Text="The Student ISO file include &#13;basic software: &#13;- Teams    - Zoom &#13;- Chrome &#13;" Width="165" />
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="222,166,0,0" VerticalAlignment="Top" Height="84" Width="175" MaxWidth="175">
+            <TextBlock TextWrapping="Wrap" Text="The Lecture ISO file include &#13;basic software: &#13;- Teams    - Zoom  &#13;- Chrome  - OBS studio" Width="165" />
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" FontSize="10">
+            <Hyperlink NavigateUri="about:blank" RequestNavigate="Hyperlink_RequestNavigate">Need Help?</Hyperlink>
+        </Label>
     </Grid>
 </Window>
