@@ -31,30 +31,59 @@ namespace Demo2
             switch (schoolList.SelectedIndex)
             {
                 case 0:
-                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/v0.1-alpha/OIP-20.04.2-v0.1.0-desktop-amd64.iso";
-                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/v0.1-alpha/OIP-20.04.2-v0.1.0-desktop-amd64.iso";
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Maynooth-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Maynooth-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Maynooth-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Maynooth-Student-amd64.md5";
                     break;
 
                 case 1:
-                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/v0.1-alpha/OIP-20.04.2-v0.1.0-desktop.iso";
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-NUI-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-NUI-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-NUI-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-NUI-Student-amd64.md5";
                     break;
 
                 case 2:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TCD-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TCD-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TCD-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TCD-Student-amd64.md5";
                     break;
 
                 case 3:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TUD-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TUD-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TUD-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-TUD-Student-amd64.md5";
                     break;
 
                 case 4:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCC-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCC-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCC-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCC-Student-amd64.md5";
                     break;
 
                 case 5:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCD-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCD-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCD-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UCD-Student-amd64.md5";
                     break;
 
                 case 6:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UL-Student-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UL-Student-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UL-Student-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-UL-Student-amd64.md5";
                     break;
 
                 case 7:
+                    stuISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Other-amd64.iso";
+                    stumd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Other-amd64.md5";
+                    lecISOfileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Other-amd64.iso";
+                    lecmd5fileUrl = "https://github.com/fishheadsam/office-in-your-pocket/releases/download/1.0/HOIP-v1.0.0-Other-amd64.md5";
                     break;
             }
         }
@@ -83,14 +112,23 @@ namespace Demo2
             }
             else
             {
-                MessageBox.Show("Hello");
+                MessageBox.Show("Remote ISO file not exist");
             }
         }
 
         // Resoponse Lecture Role button 响应教师角色按钮
         private void Download_Lecture_ISO(object sender, RoutedEventArgs e)
         {
-            DownloadFunction(RufusUrl, workfolder + @"\rufus.exe");
+            if (!Directory.Exists(workfolder))
+            {
+                Directory.CreateDirectory(workfolder);
+            }
+            else
+            {
+                Directory.Delete(workfolder, true);
+                Directory.CreateDirectory(workfolder);
+            }
+            DownloadFunction(RufusUrl, whereWeAre + @"\data\rufus.exe");
             DownloadFunction(lecmd5fileUrl, workfolder + @"\tmp.md5");
             if (HttpFileExist(lecISOfileUrl))
             {
@@ -98,7 +136,7 @@ namespace Demo2
             }
             else
             {
-                MessageBox.Show("Hello");
+                MessageBox.Show("Remote ISO file not exist");
             }
         }
 
@@ -117,7 +155,7 @@ namespace Demo2
             }
             else
             {
-                MessageBox.Show("Download Failed, please try again or send me a email.");
+                MessageBox.Show("Download Failed, please try again or using the Need help button to send me some detail.");
             }
         }
 
@@ -242,7 +280,6 @@ namespace Demo2
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
-
 
         /// <summary>
         /// Exit application and clean up everything

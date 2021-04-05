@@ -31,7 +31,7 @@
             <TextBlock TextWrapping="Wrap" Text="The Lecture ISO file include &#13;basic software: &#13;- Teams    - Zoom  &#13;- Chrome  - OBS studio" Width="165" />
         </Label>
         <Label HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" FontSize="10">
-            <Hyperlink NavigateUri="about:blank" RequestNavigate="Hyperlink_RequestNavigate">Need Help?</Hyperlink>
+            <Hyperlink NavigateUri="https://officeinpocket.netsoc.cloud/?page_id=60" RequestNavigate="Hyperlink_RequestNavigate">Need Help?</Hyperlink>
         </Label>
     </Grid>
 </Window>
